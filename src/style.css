@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+#html {
+    word-break: break-all;
+    font-family: Verdana;
+    font-size:17px;
+}
+#div {
+    position: fixed;
+    top: 5%;
+    left: 50%;
+}
+#div::before{
+    content:'';
+    position: absolute;
+    display: block;
+}
+#div::after{
+    content:'';
+    position: absolute;
+    display: block;
+}
+/*媒体查询*/
+@media (max-width:500px){ 
+#html {
+    height: 50vh!;
+    overflow: auto;
+    width: 80%;
+    margin-right: 10%;
+}
+#div {
+    margin: 0 auto;
+    height: 50vh;
+    width: 50vh;
+    position: static;
+}
+}
