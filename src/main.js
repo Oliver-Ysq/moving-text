@@ -98,7 +98,7 @@ body{
 #div:hover {
     animation: 1.5s Big infinite reverse;
 }
-/* 尝试把鼠标放在太极图上吧~
+/* 尝试把鼠标/手指放在太极图上吧~
 */
 `;
 let n = 0;
@@ -117,13 +117,14 @@ let step = ()=>{
         html.innerHTML = string;
         style.innerHTML = str.substring(0,n);
         window.scrollTo(0,999999);
+        html.scrollTo(0,999999);
         n++;
         if(n<str.length){
             step();
         }else{
             return;
         }
-    },50);
+    },0);
 };
 
 step();

@@ -123,7 +123,7 @@ var style = document.querySelector('#style'); //string用来展示最终结果
 
 var string = ''; //str用来缓存未处理的文本
 
-var str = " \n/*\n * \u4F60\u597D\u5440~\n * \u6211\u662F\u5317\u90AE\u8BA1\u7B97\u673A\u5B66\u9662\u7684\u5927\u4E8C\u5B66\u751F\u6768\u76DB\u6DC7\n * \u4E0B\u9762\u6211\u8981\u5F00\u59CB\u52A0\u6837\u5F0F\u4E86\n */\nbody{\n    color: #456789;\n}\n/*\n * \u4E0B\u9762\u5C31\u662F\u89C1\u8BC1\u83DC\u9E21\u7684\u65F6\u523B\uFF01\n * \u5148\u641E\u8D77\u4E00\u4E2Adiv\n */\n#div {\n    border: 2px solid skyblue;\n    width: 200px;\n    height: 200px;\n}\n/* \u63A5\u4E0B\u6765\u6211\u628Adiv\u53D8\u6210\u4E00\u4E2A\u592A\u6781\u56FE\n * \u6CE8\u610F\u770B\u597D\u4E86\uFF01\n * \u9996\u5148\u628Adiv\u53D8\u6210\u4E00\u4E2A\u5706\n */\n#div {\n    border-radius: 50%;\n    box-shadow: 0 0 3px rgba(0,0,0,.5);\n    border: none;\n}\n/* \u4E24\u6761\u9634\u9633\u9C7C\n* \u4E00\u526F\u592A\u6781\u56FE\n*/\n#div {\n    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100%);\n}\n#div::before{\n    background: white;\n    border-radius: 50%;\n    width: 100px;\n    height: 100px;\n    top: 0;\n    left: 50%;\n    transform: translateX(-50%);\n    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 25%, rgba(0,0,0,1) 25%, rgba(0,0,0,1) 100%);\n}\n#div::after{\n    background: black;\n    border-radius: 50%;\n    width: 100px;\n    height: 100px;\n    bottom: 0;\n    left: 50%;\n    transform: translateX(-50%);\n    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 25%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 100%, rgba(0,0,0,1) 100%);\n\n}\n/* \u5929\u5450\u9875\u9762\u597D\u4E71\n * \u6574\u7406\u4E00\u4E0B\u518D\u7EE7\u7EED\u5427\n*/\n#html{\n    margin-left: 10%;\n    width: 80%;\n    color: rgba(120,0,0,.5);\n}\n/* \u592A\u6781\u56FE\u597D\u7F8E\u5440\u54C8\u54C8\u54C8\u54C8\u54C8\n * \u4EC0\u4E48\uFF1F\u4F60\u89C9\u5F97\u5B83\u592A\u5355\u8C03\u4E86\uFF1F\n * \u5929\u54EA\u2026\u2026\n * \u597D\u5427\u2026\u2026 \u6211\u4EEC\u8BA9\u5B83\u8F6C\u8D77\u6765\u597D\u4E86\uFF01\n */\n@keyframes Rotate {\n    0%{\n      transform: rotate(0);\n    }\n    100%{\n      transform: rotate(360deg);\n    }\n  }\n#div {\n    animation: linear 2.5s Rotate infinite reverse;\n}\n/* \u4F60\u770B\uFF0C\u5B83\u8F6C\u8D77\u6765\u4E86\uFF01\n * \u4E0D\u59A8\u518D\u52A0\u4E00\u4E9B\u529F\u80FD\uFF1F\n */\n@keyframes Big {\n    0%{\n      transform: scale(1) rotate(0);\n    }\n    50%{\n        transform: scale(1.3) rotate(180deg);\n    }\n    100%{\n      transform: scale(1) rotate(360deg);\n    }\n  }\n#div:hover {\n    animation: 1.5s Big infinite reverse;\n}\n/* \u5C1D\u8BD5\u628A\u9F20\u6807\u653E\u5728\u592A\u6781\u56FE\u4E0A\u5427~\n*/\n";
+var str = " \n/*\n * \u4F60\u597D\u5440~\n * \u6211\u662F\u5317\u90AE\u8BA1\u7B97\u673A\u5B66\u9662\u7684\u5927\u4E8C\u5B66\u751F\u6768\u76DB\u6DC7\n * \u4E0B\u9762\u6211\u8981\u5F00\u59CB\u52A0\u6837\u5F0F\u4E86\n */\nbody{\n    color: #456789;\n}\n/*\n * \u4E0B\u9762\u5C31\u662F\u89C1\u8BC1\u83DC\u9E21\u7684\u65F6\u523B\uFF01\n * \u5148\u641E\u8D77\u4E00\u4E2Adiv\n */\n#div {\n    border: 2px solid skyblue;\n    width: 200px;\n    height: 200px;\n}\n/* \u63A5\u4E0B\u6765\u6211\u628Adiv\u53D8\u6210\u4E00\u4E2A\u592A\u6781\u56FE\n * \u6CE8\u610F\u770B\u597D\u4E86\uFF01\n * \u9996\u5148\u628Adiv\u53D8\u6210\u4E00\u4E2A\u5706\n */\n#div {\n    border-radius: 50%;\n    box-shadow: 0 0 3px rgba(0,0,0,.5);\n    border: none;\n}\n/* \u4E24\u6761\u9634\u9633\u9C7C\n* \u4E00\u526F\u592A\u6781\u56FE\n*/\n#div {\n    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100%);\n}\n#div::before{\n    background: white;\n    border-radius: 50%;\n    width: 100px;\n    height: 100px;\n    top: 0;\n    left: 50%;\n    transform: translateX(-50%);\n    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 25%, rgba(0,0,0,1) 25%, rgba(0,0,0,1) 100%);\n}\n#div::after{\n    background: black;\n    border-radius: 50%;\n    width: 100px;\n    height: 100px;\n    bottom: 0;\n    left: 50%;\n    transform: translateX(-50%);\n    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 25%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 100%, rgba(0,0,0,1) 100%);\n\n}\n/* \u5929\u5450\u9875\u9762\u597D\u4E71\n * \u6574\u7406\u4E00\u4E0B\u518D\u7EE7\u7EED\u5427\n*/\n#html{\n    margin-left: 10%;\n    width: 80%;\n    color: rgba(120,0,0,.5);\n}\n/* \u592A\u6781\u56FE\u597D\u7F8E\u5440\u54C8\u54C8\u54C8\u54C8\u54C8\n * \u4EC0\u4E48\uFF1F\u4F60\u89C9\u5F97\u5B83\u592A\u5355\u8C03\u4E86\uFF1F\n * \u5929\u54EA\u2026\u2026\n * \u597D\u5427\u2026\u2026 \u6211\u4EEC\u8BA9\u5B83\u8F6C\u8D77\u6765\u597D\u4E86\uFF01\n */\n@keyframes Rotate {\n    0%{\n      transform: rotate(0);\n    }\n    100%{\n      transform: rotate(360deg);\n    }\n  }\n#div {\n    animation: linear 2.5s Rotate infinite reverse;\n}\n/* \u4F60\u770B\uFF0C\u5B83\u8F6C\u8D77\u6765\u4E86\uFF01\n * \u4E0D\u59A8\u518D\u52A0\u4E00\u4E9B\u529F\u80FD\uFF1F\n */\n@keyframes Big {\n    0%{\n      transform: scale(1) rotate(0);\n    }\n    50%{\n        transform: scale(1.3) rotate(180deg);\n    }\n    100%{\n      transform: scale(1) rotate(360deg);\n    }\n  }\n#div:hover {\n    animation: 1.5s Big infinite reverse;\n}\n/* \u5C1D\u8BD5\u628A\u9F20\u6807/\u624B\u6307\u653E\u5728\u592A\u6781\u56FE\u4E0A\u5427~\n*/\n";
 var n = 0;
 
 var step = function step() {
@@ -142,6 +142,7 @@ var step = function step() {
     html.innerHTML = string;
     style.innerHTML = str.substring(0, n);
     window.scrollTo(0, 999999);
+    html.scrollTo(0, 999999);
     n++;
 
     if (n < str.length) {
@@ -149,7 +150,7 @@ var step = function step() {
     } else {
       return;
     }
-  }, 1);
+  }, 0);
 };
 
 step();
@@ -181,7 +182,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62557" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57281" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

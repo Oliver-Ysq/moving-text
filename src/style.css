@@ -26,16 +26,14 @@
 /*媒体查询*/
 @media (max-width:500px){ 
 #html {
-    height: 50vh;
+    height: 60vh;
     overflow: auto;
     width: 80%;
     margin-right: 10%;
 }
 #div {
-    margin-top: 10%;
-    margin-left: auto;
-    margin-right: auto;
-    height: 50vh;
+    margin: 0 auto;
+    height: 40vh;
     width: 50vh;
     position: static;
 }
