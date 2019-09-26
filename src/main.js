@@ -123,7 +123,7 @@ let step = ()=>{
         }else{
             return;
         }
-    },1);
+    },50);
 };
 
 step();
