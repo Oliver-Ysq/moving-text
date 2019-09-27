@@ -37,6 +37,9 @@
     width: 50vh;
     position: static;
 }
+#box {
+    position: relative;
+}
 }
 
 /*# sourceMappingURL=/style.e308ff8e.css.map */
